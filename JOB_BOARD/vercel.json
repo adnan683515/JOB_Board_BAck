@@ -1,0 +1,13 @@
+{
+    "builds":[{
+        "src":"JOB_BOARD/wsgi.py",
+        "use":"@vercel/python",
+        "config":{"maxLambdaSize":"15mb","runtime":"python3.11.3"}
+    }],
+    "routers":[
+        {
+            "src":"/(.*)",
+            "dest":"JOB_BOARD/wsgi.py"
+        }
+    ]
+}
