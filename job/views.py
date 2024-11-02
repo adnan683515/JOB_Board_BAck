@@ -30,7 +30,7 @@ class pageinationView(pagination.PageNumberPagination):
     page_size = 4 #item per size
     page_size_query_param = 'page_size'
     max_page_size = 1000
-0
+
 class job_Viewset(viewsets.ModelViewSet):
     queryset = JOB.objects.all()
     serializer_class =job_serializer_post
